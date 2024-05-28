@@ -9,6 +9,36 @@
       rel="stylesheet"
     />
     <style>
+      header {
+        padding-bottom: 10px;
+        font-family: fantasy;
+        text-align: center;
+        background-color: #333;
+      }
+      .header-title {
+        color: #ddd;
+      }
+
+      li {
+        display: inline;
+      }
+      a {
+        color: #ddd;
+      }
+      a:hover {
+        background-color: lightblue;
+      }
+      .button {
+        font: bold 11px Arial;
+        text-decoration: none;
+        background-color: lightslategrey;
+        color: #333333;
+        padding: 10px;
+        border-top: 3px solid #222;
+        border-right: 3px solid #222;
+        border-bottom: 3px solid #222;
+        border-left: 3px solid #222;
+      }
       body {
         font-family: "Open Sans", sans-serif;
         margin: 0;
@@ -104,10 +134,10 @@
       <h1>My Profile Cards</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#" class="button">Home</a></li>
+          <li><a href="#" class="button">About</a></li>
+          <li><a href="#" class="button">Contact</a></li>
+          <li><a href="#" class="button">Services</a></li>
         </ul>
       </nav>
     </header>
@@ -117,6 +147,7 @@
         alt="Profile Image"
         class="profile-photo"
       />
+
       <h3>Luis Huizar</h3>
       <p>
         John is a passionate web developer with expertise in creating
