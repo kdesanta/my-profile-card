@@ -25,7 +25,7 @@
       a {
         color: #ddd;
       }
-      a:hover {
+      header a:hover {
         background-color: lightblue;
       }
       .button {
@@ -131,13 +131,13 @@
   </head>
   <body>
     <header>
-      <h1>My Profile Cards</h1>
+      <h1 id="home">My Profile Cards</h1>
       <nav>
         <ul>
-          <li><a href="#" class="button">Home</a></li>
-          <li><a href="#" class="button">About</a></li>
-          <li><a href="#" class="button">Contact</a></li>
-          <li><a href="#" class="button">Services</a></li>
+          <li><a href="#home" class="button">Home</a></li>
+          <li><a href="#about" class="button">About</a></li>
+          <li><a href="#contact" class="button">Contact</a></li>
+          <li><a href="#services" class="button">Services</a></li>
         </ul>
       </nav>
     </header>
@@ -150,25 +150,25 @@
 
       <h3>Luis Huizar</h3>
       <p>
-        John is a passionate web developer with expertise in creating
-        user-friendly interfaces and engaging web experiences.
+        Just a guy that likes to code fr. Fulltime student enrolled in YearUps
+        app development track.
       </p>
     </div>
     <div class="profile-card">
       <img
-        src="https://picsum.photos/100"
+        src="https://picsum.photos/id/306//100"
         alt="Profile Image"
         class="profile-photo"
       />
       <h3>Karla Carrera</h3>
       <p>
-        John is a passionate web developer with expertise in creating
+        Karla is a passionate web developer with expertise in creating
         user-friendly interfaces and engaging web experiences.
       </p>
     </div>
     <div class="profile-card">
       <img
-        src="https://ibb.co/N20p2GS"
+        src="https://picsum.photos/id/330//100"
         alt="Profile Image"
         class="profile-photo"
       />
@@ -185,21 +185,21 @@
     <footer>
       <div class="footer-content">
         <div class="footer-section">
-          <h3>About Us</h3>
+          <h3 id="about">About Us</h3>
           <p>
             For our profile cards Luis, Karla, and I collaborated on a
             repository on Github in order to professionally present our skills.
           </p>
         </div>
         <div class="footer-section">
-          <h3>Contact</h3>
+          <h3 id="contact">Contact</h3>
           <p>
-            Email: Evert: efreeman@sea.yearup.org Luis: lhuizar@sea.yearup.org
-            Karla: Kcarrera@sea.yearup.org
+            Evert: efreeman@sea.yearup.org Luis: lhuizar@sea.yearup.org Karla:
+            Kcarrera@sea.yearup.org
           </p>
         </div>
         <div class="footer-section">
-          <h3>Github Pages</h3>
+          <h3 id="services">Github Pages</h3>
           <ul>
             <li><a href="https://github.com/kdesanta">Karla's GitHub</a></li>
             <li><a href="https://github.com/HuizarL">Luis's GitHub</a></li>
