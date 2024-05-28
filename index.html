@@ -1,139 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile Cards</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
     <style>
+      .header {
+        padding-bottom: 10px;
+        font-family: fantasy;
+        text-align: center;
+        background-color: #333;
+      }
+      .header-title {
+        color: #ddd;
+      }
+
+      li {
+        display: inline;
+      }
+      a {
+        color: #ddd;
+      }
+      a:hover {
+        background-color: lightblue;
+      }
+      .button {
+        font: bold 11px Arial;
+        text-decoration: none;
+        background-color: lightslategrey;
+        color: #333333;
+        padding: 10px;
+        border-top: 3px solid #222;
+        border-right: 3px solid #222;
+        border-bottom: 3px solid #222;
+        border-left: 3px solid #222;
+      }
       body {
-          font-family: 'Open Sans', sans-serif;
-          margin: 0;
-          padding: 0;
-          background: #f4f4f4;
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
       }
 
       /* Footer CSS */
       footer {
-          background-color: #333;
-          color: #ffffff;
-          text-align: center;
-          padding: 10px;
-          font-size: 12px;
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
       }
 
       .footer-content {
-          display: flex;
-          justify-content: space-around;
-          padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
       }
 
       .footer-section {
-          margin: 5px;
+        margin: 5px;
       }
 
       .footer-section h3 {
-          color: #ffff99;
-          font-size: 14px;
+        color: #ffff99;
+        font-size: 14px;
       }
 
-      .footer-section p, .footer-section li a {
-          color: #cccccc;
-          font-size: 12px;
+      .footer-section p,
+      .footer-section li a {
+        color: #cccccc;
+        font-size: 12px;
       }
 
       .footer-section ul {
-          list-style-type: none;
-          padding: 0;
+        list-style-type: none;
+        padding: 0;
       }
 
       .footer-section li a {
-          text-decoration: none;
-          color: inherit;
-          transition: color 0.3s;
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.3s;
       }
 
       .footer-section li a:hover {
-          color: #ffffff;
+        color: #ffffff;
       }
 
       .footer-bottom {
-          margin-top: 10px;
-          border-top: 1px solid #444;
-          padding-top: 5px;
+        margin-top: 10px;
+        border-top: 1px solid #444;
+        padding-top: 5px;
       }
 
       .footer-bottom p {
-          margin: 0;
+        margin: 0;
       }
 
       /* Profile Card CSS */
       .profile-card {
-          background: white;
-          border: 1px solid #ddd;
-          margin: 20px auto;
-          padding: 20px;
-          width: 80%;
-          max-width: 600px;
-          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-          text-align: center;
+        background: white;
+        border: 1px solid #ddd;
+        margin: 20px auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
       }
 
       .profile-card img {
-          border-radius: 50%;
+        border-radius: 50%;
       }
 
       .profile-card h2 {
-          color: #333;
+        color: #333;
       }
 
       .profile-card p {
-          font-size: 16px;
-          line-height: 1.5;
-          color: #666;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #666;
       }
     </style>
-</head>
-<body>
-    <header>
-        <h1>My Profile Cards</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Services</a></li>
-            </ul>
-        </nav>
-    </header>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="header-title">My Profile Cards</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#" class="button">Home</a></li>
+          <li><a href="#" class="button">About</a></li>
+          <li><a href="#" class="button">Contact</a></li>
+          <li><a href="#" class="button">Services</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="profile-card">
-        <img src="https://picsum.photos/100" alt="Profile Image" class="profile-photo">
-        <h3>John Doe</h3>
-        <p>John is a passionate web developer with expertise in creating user-friendly interfaces and engaging web experiences.</p>
+      <img
+        src="https://picsum.photos/100"
+        alt="Profile Image"
+        class="profile-photo"
+      />
+      <h3>John Doe</h3>
+      <p>
+        John is a passionate web developer with expertise in creating
+        user-friendly interfaces and engaging web experiences.
+      </p>
     </div>
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>Details about the company.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Email: example@example.com</p>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>Details about the company.</p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 My Profile Cards. All rights reserved.</p>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: example@example.com</p>
         </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 My Profile Cards. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
-
